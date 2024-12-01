@@ -7,30 +7,37 @@
     <meta name="description" content="streaming service Peanut">
     <meta name="author" content="Peanut">
     <meta name="keywords" content="films, séries, videos, regarder, populaire, inscription, prix">
-    <link rel="stylesheet" href="/base.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/layouts.css">
+    <link rel="stylesheet" href="css/modules.css">
+
     
 </head>
 <body>
-    <header>
-        <h1><a href="" aria-label="Accueil - PEANUT">PEANUT</a></h1>
+    <header id="header" class="header">
+        <a href="" aria-label="Accueil - PEANUT"><img src="/img/Logo.png" alt="Peanut Logo"></a>
         <nav>
             <ul role="list" aria-labelledby="navigation">
-                <li><a href="html/series.html">Séries</a></li>
-                <li><a href="html/films.html">Films</a></li>
+                <li><a href="html/series.html">Séries</a></li> 
+                <li><a href="html/films.html">Films</a></li >
                 <li><a href="html/live.html">Live</a></li>
                 <li><a href="html/collections.html">Collections</a></li>
             </ul>
         </nav>
         <div>
-            <button>Rechercher</button>
-            <button><a href="html/profil.html">Mon Compte</a></button>
+            <input type="search">
+            <button class="button button_mon_compte"><a href="html/profil.html">Mon Compte</a></button>
         </div>
     </header>
 
     <main>
+        <h1 style="display: none;">PEANUT</h1>
+        <a class="button remonter" href="#header">REMONTER EN HAUTE</a>
         <section class="section section_poster">
             <h2>INTERSTELLAR</h2>
-            <img src="img/slider/imageslider.png" alt="">
+            <p>2014 | Science-fiction | 2h40</p>
+            <p>Alors que la Terre se meurt, une équipe d'astronautes franchit un trou de ver apparu près de Saturne et conduisant à une autre galaxie, afin d'explorer un nouveau système stellaire dans l'espoir de trouver une planète habitable.</p>
+            <button>REGARDER</button>
         </section>
 
         <section class="section section_catalogue_series">
@@ -106,30 +113,38 @@
     </main>
 
     <footer>
-        <h4> Plan du site</h4>
-        <ul role="list" aria-labelledby="plan du site">
-            <li><a href="index.html" target="_self">Accueil</a></li>
-            <li><a href="html/series.html" target="_blank" rel="noopener noreferrer">Séries</a></li>
-            <li><a href="html/films.html" target="_blank" rel="noopener noreferrer">Films</a></li>
-            <li><a href="html/collections.html" target="_blank" rel="noopener noreferrer">Collections</a></li>
-            <li><a href="html/live.html" target="_blank" rel="noopener noreferrer">Live</a></li>
-        </ul>
+        <div class="footer footer_plan">
+            <div class="footer footer_plan_nav">
+                <h4> Plan du site</h4>
+                <ul role="list" aria-labelledby="plan du site">
+                    <li><a href="index.html" target="_self">Accueil</a></li>
+                    <li><a href="html/series.html" target="_blank" rel="noopener noreferrer">Séries</a></li>
+                    <li><a href="html/films.html" target="_blank" rel="noopener noreferrer">Films</a></li>
+                    <li><a href="html/collections.html" target="_blank" rel="noopener noreferrer">Collections</a></li>
+                    <li><a href="html/live.html" target="_blank" rel="noopener noreferrer">Live</a></li>
+                </ul>    
+            </div>
 
-        <h4>Règlements</h4>
-        <ul role="list" aria-labelledby="règlements">
-            <li>Confidentialité</li>
-            <li>Condition d'abonnement</li>
-            <li>Géres les cookies</li>
-            <li>Méntions légales</li>
-        </ul>
+            <div class="footer footer_plan_nav">
+                <h4>Règlements</h4>
+                <ul role="list" aria-labelledby="règlements">
+                    <li>Confidentialité</li>
+                    <li>Condition d'abonnement</li>
+                    <li>Géres les cookies</li>
+                    <li>Méntions légales</li>
+                </ul>
+            </div>
 
-        <h4>Support</h4>
-        <ul role="list" aria-labelledby="support">
-            <li>Nous contacter</li>
-            <li>FAQ</li>
-        </ul>
+            <div class="footer footer_plan_nav">
+                <h4>Support</h4>
+                <ul role="list" aria-labelledby="support">
+                    <li>Nous contacter</li>
+                    <li>FAQ</li>
+                </ul>
+            </div>
+        </div>
 
-        <div>
+        <div class="footer footer_network">
             <!-- adapter la taille des icônes avec css plus tard -->
             <ul role="list" aria-label="Suivez-nous sur les réseaux sociaux">
                 <li>

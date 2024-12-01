@@ -8,11 +8,13 @@
     <meta name="author" content="Peanut">
     <meta name="keywords" content="films, séries, videos, regarder, populaire">
     <link rel="stylesheet" href="/css/base.css">
+    <link rel="stylesheet" href="/css/layouts.css">
+    <link rel="stylesheet" href="/css/modules.css">
     
 </head>
 <body>
     <header>
-        <h1><a href="/index.html" aria-label="Accueil - PEANUT">PEANUT</a></h1>
+        <a href="" aria-label="Accueil - PEANUT"><img src="/img/Logo.png" alt="Peanut Logo"></a>
         <nav>
             <ul role="list" aria-labelledby="navigation">
                 <li><a href="series.html">Séries</a></li>
@@ -22,18 +24,36 @@
             </ul>
         </nav>
         <div>
-            <button>Rechercher</button>
-            <a href="profil.html"><button>Mon Compte</button></a>
+            <input type="search">
+            <button class="button button_mon_compte"><a href="profil.html">Mon Compte</a></button>
         </div>
     </header>
     <main>
-        <div>
+        <section class="section section_inscription">
+            <h3>INSCRIPTION</h3>
             <div>
                 <img src="/img/inscription.png" alt="">
             </div>
-            <form action=""></form>
-
-        </div>
+            <form action="" method="" id="inscription" name="inscription">
+                <div>
+                    <label for="e-mail">Votre e-mail</label>
+                    <input type="email" id="e-mail" name="e-mail" required placeholder="email@adresse.com">    
+                </div>
+                <div>
+                    <label for="nickname">Votre nickname</label>
+                    <input type="text" id="nickname" name="nickname" required placeholder="Nickname">    
+                </div>
+                <div>
+                    <label for="password">Votre mot de passe</label>
+                    <input type="password" id="password" name="password" required placeholder="Saisir votre mot-de-passe" mixlength="8" maxlength="20" pattern="">    
+                </div>
+                <div>
+                    <label for="password_confirmation">Confirmez votre mot de passe</label>
+                    <input type="password" id="password_confirmation" name="password_confirmation" required placeholder="Saisir votre mot-de-passe" mixlength="8" maxlength="20" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}">   
+                </div>
+                <button type="submit">S'inscrire</button>
+            </form>
+        </section>
     </main>
     <footer>
         <h4> Plan du site</h4>

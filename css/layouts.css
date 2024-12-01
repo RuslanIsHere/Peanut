@@ -1,0 +1,72 @@
+/* HEADER */
+header { 
+    background-color: #252525;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+}
+header ul {
+    display: flex;
+    justify-content: space-between;
+}
+header nav a {
+    font-size: 24px;
+    font-weight: bold;
+    color: #FFBC59;
+    padding: 0 20px;
+
+}
+
+/* MAIN - for general margins and paddings*/
+main {
+    padding:50px;
+}
+
+/* SECTIONS */
+section {
+    border: 1px solid #FFBC59;
+    border-radius: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 50px;
+}
+
+section>h2 {
+    font-size: 64px;
+    color: #FFBC59;
+}
+/* SECTION POSTER */
+.section_poster {
+    background-image: url(/img/slider/imageslider.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 1220px;
+    height: 830px;
+}
+/* SECTIONS CARDS */
+.cards {
+    display: flex;
+}
+/* FOOTER */
+/* FOOTER PLAN AVEC LES LISTES */
+.footer_plan {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer h4 {
+    color: #FFBC59;
+}
+footer li {
+    color: #FFFFFF;
+}
+
+.footer_network>ul {
+    display: flex;
+    justify-content: center;
+}
+.footer_network img {
+    width: 30px;
+    height: 30px;
+}

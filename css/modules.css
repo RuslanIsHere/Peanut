@@ -1,0 +1,30 @@
+/* HEADER LOGO */
+header img {
+    width: 80px;
+    height: 80px;
+}
+
+/* BUTTONS */
+button {
+    font-size: 24px;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+.button_mon_compte {
+    background-color: #3830F4;
+}
+
+
+/* BUTTON REMONTER  */
+.remonter {
+    position: fixed;
+    bottom: 20%;
+    right: 20%;
+    background-color: #3830F4;
+    padding: 10px;
+    border-radius: 10px;
+}
+
