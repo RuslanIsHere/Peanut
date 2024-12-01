@@ -13,36 +13,32 @@
     
 </head>
 <body>
-    <header>
-        <div> 
-            <a href="" aria-label="Accueil - PEANUT"><img src="/img/Logo.png" alt="Peanut Logo"></a>
-            <nav class="nav">
-                <ul role="list" aria-labelledby="navigation">
-                    <li><a href="series.html">Séries</a></li>
-                    <li><a href="films.html">Films</a></li>
-                    <li><a href="live.html">Live</a></li>
-                    <li><a href="collections.html">Collections</a></li>
-                </ul>
-            </nav>
-            <div>
-                <input type="search">
-                <button class="button button_mon_compte"><a href="profil.html">Mon Compte</a></button>
-            </div> 
-        </div>
+    <header id="header" class="header-main">
+        <a href="/index.html" aria-label="Accueil - PEANUT"><img src="/img/Logo.png" alt="Peanut Logo"></a>
+        <nav class="nav">
+            <ul role="list" aria-labelledby="navigation">
+                <li><a href="series.html">Séries</a></li>
+                <li><a href="films.html">Films</a></li>
+                <li><a href="live.html">Live</a></li>
+                <li><a href="collections.html">Collections</a></li>
+            </ul>
+        </nav>
         <div>
-            <nav class="nav subnav">
-                <ul role="list" aria-labelledby="sub navigation">
-                    <li><a href="">Drame</a></li>
-                    <li><a href="">Action</a></li>
-                    <li><a href="">Humour</a></li>
-                    <li><a href="">Horreur</a></li>
-                    <li><a href="">Fantaisie</a></li>
-                    <li><a href="">Sci-fi</a></li>
-                    <li><a href="">Nouveautés</a></li>
-                </ul>
-            </nav>
-        </div>
-       
+            <input type="search">
+            <button class="button button_mon_compte"><a href="profil.html">Mon Compte</a></button>
+        </div> 
+        <!-- réfléchir à la nécessité d'une navigation secondaire pour certaines pages -->
+        <!-- <nav class="nav subnav">
+            <ul role="list" aria-labelledby="sub navigation">
+                <li><a href="">Drame</a></li>
+                <li><a href="">Action</a></li>
+                <li><a href="">Humour</a></li>
+                <li><a href="">Horreur</a></li>
+                <li><a href="">Fantaisie</a></li>
+                <li><a href="">Sci-fi</a></li>
+                <li><a href="">Nouveautés</a></li>
+            </ul>
+        </nav> -->
     </header>
 
     <main>
@@ -71,29 +67,57 @@
     </main>
 
     <footer>
-        <h4> Plan du site</h4>
-        <ul role="list" aria-labelledby="plan du site">
-            <li><a href="/index.html" target="_blank" rel="noopener noreferrer">Accueil</a></li>
-            <li><a href="series.html" target="_self">Séries</a></li>
-            <li><a href="films.html" target="_blank" rel="noopener noreferrer">Films</a></li>
-            <li><a href="collections.html" target="_blank" rel="noopener noreferrer">Collections</a></li>
-            <li><a href="live.html" target="_blank" rel="noopener noreferrer">Live</a></li>
-        </ul>
+        <div class="footer footer_plan">
+            <div class="footer footer_plan_nav">
+                <h4> Plan du site</h4>
+                <ul role="list" aria-labelledby="plan du site">
+                    <li><a href="/index.html" target="_blank" rel="noopener noreferrer">Accueil</a></li>
+                    <li><a href="series.html" target="_self">Séries</a></li>
+                    <li><a href="films.html" target="_blank" rel="noopener noreferrer">Films</a></li>
+                    <li><a href="collections.html" target="_blank" rel="noopener noreferrer">Collections</a></li>
+                    <li><a href="live.html" target="_blank" rel="noopener noreferrer">Live</a></li>
+                </ul>    
+            </div>
 
-        <h4>Règlements</h4>
-        <ul role="list" aria-labelledby="règlements">
-            <li>Confidentialité</li>
-            <li>Condition d'abonnement</li>
-            <li>Géres les cookies</li>
-            <li>Méntions légales</li>
-        </ul>
+            <div class="footer footer_plan_nav">
+                <h4>Règlements</h4>
+                <ul role="list" aria-labelledby="règlements">
+                    <li>Confidentialité</li>
+                    <li>Condition d'abonnement</li>
+                    <li>Géres les cookies</li>
+                    <li>Méntions légales</li>
+                </ul>
+            </div>
 
-        <h4>Support</h4>
-        <ul role="list" aria-labelledby="support">
-            <li>Nous contacter</li>
-            <li>FAQ</li>
-        </ul>
+            <div class="footer footer_plan_nav">
+                <h4>Support</h4>
+                <ul role="list" aria-labelledby="support">
+                    <li>Nous contacter</li>
+                    <li>FAQ</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer footer_network">
+            <!-- adapter la taille des icônes avec css plus tard -->
+            <ul role="list" aria-label="Suivez-nous sur les réseaux sociaux">
+                <li>
+                    <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                        <img src="/img/icons/instagram.svg" alt="Instagram">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                        <img src="/img/icons/facebook.svg" alt="Facebook">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+                        <img src="/img/icons/youtube.svg" alt="YouTube">
+                    </a>
+                </li>
+            </ul>
+        </div>
     </footer>
-    
 </body>
 </html>
