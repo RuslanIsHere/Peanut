@@ -1,0 +1,38 @@
+
+/*LOGO ANIMATION - PULSE ET ROTATION */
+header img:hover {
+    animation: pulse 3s ease infinite, rotate 3s linear infinite;
+}
+
+
+@keyframes pulse {
+    0% {
+        transform: scale(1) rotate(0deg);
+    }
+
+    50% {
+        transform: scale(0.8);
+    }
+
+    100% {
+        transform: scale(1) rotate(360deg);
+    }
+}
+
+/* CARDS ANIMATION - FADE IN */
+.card {
+    animation: fadein 1s ease;
+}
+@keyframes fadein {
+    0% {
+        transform: translateY(20px);
+        opacity: 0;
+        scale: 0.5;
+    }
+
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+        scale: 1;
+    }
+}

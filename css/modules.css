@@ -1,7 +1,8 @@
 /* HEADER */
 header img {
-    width: 80px;
-    height: 80px;
+    width: 70px;
+    height: 70px;
+    transition: transform 0.3s ease;
 }
 
 header nav a {
@@ -10,7 +11,7 @@ header nav a {
     text-transform: uppercase;
     color: #FFBC59;
     padding: 0 20px;
-    transition: all 0.2s ease-in-out; /
+    transition: all; /
 
 }
 
@@ -25,6 +26,14 @@ header nav a:active {
     background-color: #FFBC59;
     border-radius: 10px;
     text-decoration: underline;
+}
+
+header input {
+    background-color: #363636;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    margin-right: 10px;
 }
 
 /* BUTTONS */
@@ -43,6 +52,11 @@ button {
     background-color: #3830F4;
 }
 
+.button_regarder,
+.button_favorite {
+    background-color: #FFBC59;
+    color: #303030;
+}
 
 /* BUTTON REMONTER  */
 .remonter {
@@ -56,6 +70,7 @@ button {
 
 /* SECTION CARDS */
 .card {
+    margin: 0 !important;
     transition: all 0.3s ease-in-out;
     border-radius: 10px;
     height: 400px;
@@ -66,6 +81,12 @@ button {
     transform: scale(1.05);
     box-shadow: 0 8px 15px rgba(255, 188, 89, 1);
 }
+
+/* 
+.films_cards {
+    flex-wrap: wrap;
+} */
+
 
 /* SECTIONS LINKS */
 

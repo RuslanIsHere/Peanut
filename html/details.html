@@ -2,7 +2,7 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>Catalogue</title>
+    <title>Details</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="streaming service Peanut">
     <meta name="author" content="Peanut">
@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="/css/base.css">
     <link rel="stylesheet" href="/css/layouts.css">
     <link rel="stylesheet" href="/css/modules.css">
+    <link rel="stylesheet" href="/css/animations.css">
+    <link rel="stylesheet" href="/css/responsive.css">
     
 </head>
 <body>
@@ -30,27 +32,19 @@
     </header>
 
     <main>
-        <section class="section section_catalogue_series">
-            <h2><a href="series.html" target="_blank">Séries</a></h2>
-            <div class="cards séries_cards">
-                <div>
-                    <img class="card" src="/img/cards/séries/1923poster.png" alt="Poster de 1923 ">
-                </div>
-                <div>
-                    <img class="card" src="/img/cards/séries/yellowjacketposter.png" alt="Poster d'Yellowjacket">
-                </div>
-                <div>
-                    <img class="card" src="/img/cards/séries/evilposter.png" alt="Poster d'Evil ">
-                </div>
-                <div>
-                    <img class="card" src="/img/cards/séries/haloposter.png" alt="Poster d'Halo">
-                </div>
+        <section class="section section_details">
+    
+            <img class="grid_poster" src="/img/slider/imageslider.png" alt="Poster d'Interstellar">
+            <h2 class="grid_header">INTERSTELLAR</h2>
+            <div class="grid_details">
+                <p>2014 | Science-fiction | 2h40</p>
+                <p>Alors que la Terre se meurt, une équipe d'astronautes franchit un trou de ver apparu près de Saturne et conduisant à une autre galaxie, afin d'explorer unnouveau système stellaire dans l'espoir de trouver une planète habitable.</p>    
             </div>
-        </section>
-
-        <section  class="section section_catalogue_films">
-            <h2><a href="films.html" target="_blank">Films</a></h2>
-            <div class="cards films_cards">
+            <div class="grid_actions">
+                <button class="button button_regarder">REGARDER</button>
+                <button class="button button_favorite">MY LIST</button>   
+            </div>
+            <div class="grid_recommendations">
                 <div>
                     <img class="card" src="/img/cards/films/driveposter.png" alt="Poster de Drive">
                 </div>
@@ -64,12 +58,6 @@
                     <img  class="card"src="/img/cards/films/flowposter.png" alt="Poster de Flow poster">
                 </div>
             </div>
-        </section>
-        <section  class="section section_catalogue_collections">
-            <h2><a href="collections.html" target="_blank">Oups, il semblerait que vous n’êtes pas abonné ?!</a></h2>
-            <p>Vous avez fait le tour du buffet gratuit…mais pour voir la suite, il va falloir échanger quelques peanuts contre du contenu premium !</p>
-            <button><a href="connexion.html">S'INSCRIRE</a></button>
-            <button><a href="inscription.html">SE CONNECTER</a></button>
         </section>
     </main>
 

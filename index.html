@@ -10,12 +10,14 @@
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/layouts.css">
     <link rel="stylesheet" href="css/modules.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/responsive.css">
 
     
 </head>
 <body>
     <header id="header" class="header-main">
-        <a href="index.html" aria-label="Accueil - PEANUT"><img src="/img/Logo.png" alt="Peanut Logo"></a>
+        <a href="index.html" aria-label="Accueil - PEANUT"><img class="logo" src="/img/Logo.png" alt="Peanut Logo"></a>
         <nav>
             <ul role="list" aria-labelledby="navigation">
                 <li><a href="html/series.html">Séries</a></li> 
@@ -24,8 +26,8 @@
                 <li><a href="html/collections.html">Collections</a></li>
             </ul>
         </nav>
-        <div>
-            <input type="search">
+        <div class="navbuttons"> 
+            <input type="search" placeholder="Rechercher">
             <button class="button button_mon_compte"><a href="html/profil.html">Mon Compte</a></button>
         </div>
     </header>

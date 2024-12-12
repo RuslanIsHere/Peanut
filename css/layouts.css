@@ -2,6 +2,9 @@
 header {
     background-color: #252525;
     height: 100px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    padding: 0 50px;
 }
 
 
@@ -18,6 +21,11 @@ header ul {
     justify-content: space-between;
 }
 
+.navbuttons {
+    display: flex;
+
+}
+
 
 /* MAIN - for general margins and paddings*/
 main {
@@ -27,14 +35,15 @@ main {
 
 /* SECTIONS */
 section {
-    border: 1px solid #FFBC59;
+    /* border: 1px solid #FFBC59; */
     border-radius: 10px;
     padding-top: 10px;
     padding-bottom: 10px;
     margin-bottom: 50px;
 }
 
-section h2 {
+section h2,
+h2 a {
     font-size: 64px;
     color: #FFBC59;
     text-align: center;
@@ -46,12 +55,12 @@ section h2 {
     background-image: url(/img/slider/imageslider.png);
     background-repeat: no-repeat;
     background-size: cover;
-    width: 1420px;
-    height: 830px;
+    width: 100%;
+    height: 80vh;
     display: flex;
-    align-items: center; /* Центровка по вертикали */
-    padding-left: 50px; /* Отступ для контента от левого края */
-    box-sizing: border-box; /* Учитываем отступы в расчёте ширины */
+    align-items: center; 
+    padding-left: 50px; 
+    box-sizing: border-box; 
 }
 
 .section_poster_content {
@@ -59,11 +68,11 @@ section h2 {
     padding: 10px;
     background-color: rgba(0, 0, 0, 0.5);
     border-radius: 10px;
-    max-width: 800px; /* Ограничиваем ширину контента */
-    color: white; /* Цвет текста */
+    max-width: 800px; 
+    color: white; 
     display: flex;
-    flex-direction: column; /* Для вертикального размещения текста и кнопки */
-    justify-content: center; /* Центровка элементов внутри по вертикали */
+    flex-direction: column; 
+    justify-content: center; 
 }
 .section_poster_content p {
     font-size: 20px;
@@ -72,13 +81,15 @@ section h2 {
 /* SECTIONS CARDS */
 .cards {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     gap: 20px;
     margin: 20px;
+    flex-wrap: wrap;
 }
 
 /* SECTION CONNEXION */
 .section_connexion {
+    border: 1px solid #FFBC59;
     display: flex;
     font-size: 20px;
     margin-top: 20px;
@@ -92,12 +103,82 @@ form {
     flex-direction: column;
 }
 
+/* SECTION PROFIL */
+.section_profil {
+    border: 1px solid #FFBC59;
+    display: grid;
+    grid-template-columns: 40% 60%;
+}
+
+.section_profil .card {
+    scale: 0.7;
+}
+
+.recommendations_cards {
+    display: flex;
+}
+
+/* .recommendations_cards  div{
+    max-width: 25%;
+} */
+
+
+
+/* GRID TESTING */
+
+.section_details {
+    display: grid;
+    gap: 50px;
+    grid-template-areas: 
+    "poster title"
+    "poster details"
+    "poster actions"
+    "recommendations recommendations";
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 150px 150px 150px 1fr
+}
+
+.grid_poster {
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    border-radius: 30px;
+    grid-area: poster;
+}
+
+.grid_header {
+    grid-area: title;
+}
+.grid_details {
+    grid-area: details;
+    font-size: 20px;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+.grid_actions {
+    grid-area: actions;
+}
+.grid_recommendations {
+    grid-area: recommendations;
+    display: flex;
+    padding-bottom: 20px;
+}
+
+.grid_recommendations div:not(:last-of-type){
+    margin-right: 50px;
+}
+
+
 
 /* FOOTER */
 /* FOOTER PLAN AVEC LES LISTES */
+
+/* footer {
+    background-color: #252525;
+} */
 .footer_plan {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 footer h4 {
